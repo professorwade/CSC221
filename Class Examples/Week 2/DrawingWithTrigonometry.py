@@ -28,14 +28,16 @@ arcade.draw_rectangle_filled(300, 150, 600, 300, arcade.csscolor.DARK_BLUE)
 # since we are only doing this on the top half of the sun, our degrees will go from 0 to 180 or
 # 0 to pi in radians
 # 30 degrees
+# To simplify the code we'll use variables. Variables are like what we see in algebra, they are
+# "names" that hold data. We'll talk more about it in the next module but for now let's stick
+# with drawing.
 width = 10
 degrees = 30
 
-# I like to work in degrees but the Python standard math library works in radians. Therefore
+# I like to work in degrees but the Python standard math library works in radians. Therefore,
 # we need to convert the degrees we assigned to the variable "degrees" to radians. We can
 # do this by calling another function math.radians.
 x_start = 300 + math.cos(math.radians(degrees)) * 55
-
 
 y_start = 300 + math.sin(math.radians(degrees)) * 55
 x_end = 300 + math.cos(math.radians(degrees)) * 400
