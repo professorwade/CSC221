@@ -65,10 +65,10 @@ from consumer_cost.
 """ Variables can be used to do calculations, suppose that: """
 celsius = 0
 
-# if we want to convert this to fahrenheit we can use a simple formula.
+# if we want to convert this to Fahrenheit we can use a simple formula.
 fahrenheit = celsius * 9.0 / 5 + 32
 
-""" This allows us to convert any value of celsius to its equivalent in fahrenheit. So let's look
+""" This allows us to convert any value of celsius to its equivalent in Fahrenheit. So let's look
  a little closer at the formula. The 9.0 / 5 is simply dividing 9.0 by 5. The + 32 is what
  one would assume, just adds 32. Python uses the same mathematical precedence rules or
  order of operations as algebra. Consequently, the 9.0 divided by 5 happens before adding 32.
