@@ -60,9 +60,7 @@ Python interpreter doesn't care but this is generally considered good practice i
 
 One last thing, variables are case sensitive. So Consumer_cost is a completely different variable
 from consumer_cost. 
-
 """
-
 
 """ Variables can be used to do calculations, suppose that: """
 celsius = 0
@@ -70,15 +68,15 @@ celsius = 0
 # if we want to convert this to fahrenheit we can use a simple formula.
 fahrenheit = celsius * 9.0 / 5 + 32
 
-# This allows us to convert any value of celsius to its equivalent in fahrenheit. So let's look
-# a little closer at the formula. The 9.0 / 5 is simply dividing 9.0 by 5. The + 32 is what
-# one would assume, just adds 32. Python uses the same mathematical precedence rules or
-# order of operations as algebra. Consequently, the 9.0 divided by 5 happens before adding 32.
-# Before we leave this formula, one more thing. The 9.0 instead of 9 is on purpose. You see,
-# in Python 9 / 5 is 1. If integers (whole numbers) are divided, the result is a whole number.
-# The end result is that the fractions are lost. In order to keep the fractional part of the
-# result, one of the values needs to be floating point or fractional. The .0 added to the 9
-# will make Python treat the expression as floating point.
+""" This allows us to convert any value of celsius to its equivalent in fahrenheit. So let's look
+ a little closer at the formula. The 9.0 / 5 is simply dividing 9.0 by 5. The + 32 is what
+ one would assume, just adds 32. Python uses the same mathematical precedence rules or
+ order of operations as algebra. Consequently, the 9.0 divided by 5 happens before adding 32.
+ Before we leave this formula, one more thing. The 9.0 instead of 9 is on purpose. You see,
+ in Python 9 / 5 is 1. If integers (whole numbers) are divided, the result is a whole number.
+ The end result is that the fractions are lost. In order to keep the fractional part of the
+ result, one of the values needs to be floating point or fractional. The .0 added to the 9
+ will make Python treat the expression as floating point."""
 
 
 
