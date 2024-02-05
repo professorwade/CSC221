@@ -1,0 +1,44 @@
+Requirements for Drawing
+You can update your program from Lab 2, or create a new program.
+This lab is worth 50 points. See the point breakdown below.
+
+Incorporate the following items:
+
+Find the folder for Lab 03 in PyCharm and start entering your code there. Feel free to use
+ any code from Lab 02 you want, just copy it across.
+
+Make sure you are putting your program in the Lab 3 folder, and not just changing Lab 2 to
+have Lab 3 requirements.
+
+We are going to be following the instructions/example in Drawing With Functions.
+
+Put everything into a function as shown in Make The main Function.
+
+Create three functions that draw something.
+
+Define the function and successfully call it.
+
+Make your drawing function complex. 0 points for a one-line function that just draws a
+rectangle, 0 points for copying
+
+the example from the book, 2 points for a cohesive multi-line function.
+
+Pass in x and y parameters and successfully position the object as shown in
+Make The Drawing Functions.
+
+Make sure the image you draw is centered around the x and y, and not off-set.
+
+Call at least one of the functions more than once, and in a different location.
+
+Double Check
+Make sure you don’t put functions inside of functions. After the import statement, each
+function should be listed out, one def after the other. But no def inside of another def.
+
+Make sure you have three functions that take in an (x, y) position to draw an object,
+ not just one.
+
+The most frequent source of confusion on this lab, and way to lose points, is a drawing
+function that is not centered around the specified (x, y). You can confirm this is working
+by drawing a point right at the x, y as the last line of your code. If the point draws
+near the center of your item, you are good. If the point is nowhere near the center,
+you need to re-center it.
