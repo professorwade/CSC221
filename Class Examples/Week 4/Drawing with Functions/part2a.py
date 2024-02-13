@@ -1,7 +1,7 @@
 """
 The process of refining your code is called re-factoring. Essentially it is a process of
 improving the structure or implementation to gain maintainability, efficiency, error
-tolerance, etc., I.e. making it better. This is an important lifecycle step in sofware
+tolerance, etc., I.e. making it better. This is an important lifecycle step in software
 development and a good practice for professionals.
 
 First we will "pull out" the code for drawing grass and put it in its own function. Once

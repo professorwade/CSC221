@@ -57,8 +57,9 @@ def on_draw(delta_time):
     # Negative numbers move left. Larger numbers move faster.
 
     # this line is somewhat modified from what is in the textbook
-    on_draw.snow_person1_x = (on_draw.snow_person1_x + 5) % 800
-
+    on_draw.snow_person1_x = (on_draw.snow_person1_x - 1)
+    if on_draw.snow_person1_x < 0:
+        on_draw.snow_person1_x = 800
 
 # Create a value that our on_draw.snow_person1_x will start at.
 on_draw.snow_person1_x = 150

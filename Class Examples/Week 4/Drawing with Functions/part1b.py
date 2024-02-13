@@ -7,6 +7,21 @@ a special name in some languages, in Python it is just convention for clarity. L
 for the code below. First we "def"ine main as seen below. Then, at the bottom of the file
 we "call" main. This is needed because a "define" does only that, it defines the function.
 actually run it, we need to call it.
+
+The last thing is some rather odd syntax at the bottom of the file:
+
+if __name__ == "__main__":
+    main()
+
+Essentially, this is asking "is this file that is being used to launch the program" If "yes" then
+run the main() function. Otherwise, don't.
+
+This allows the main() function to run if the file is being run but not run if the file is being imported.
+This is handy for files that contain utilities for import but may have some test code in main().
+
+Of course, if you never intended to import the file as a library, then you can just put
+main() to run the main function.
+
 """
 
 import arcade
@@ -39,4 +54,7 @@ def main():
 
 
 # Call the main function to get the program started.
-main()
+# Only run the main function if we are running this file. Don't run it
+# if we are importing this file.
+if __name__ == "__main__":
+    main()
