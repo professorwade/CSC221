@@ -1,44 +1,39 @@
 import random
 
+
 def menu():
     print("""
     A. Drink from your canteen.
     B. Ahead moderate speed.
     C. Ahead full speed.
-    D. Stop and rest.
+    D. Stop for the night.
     E. Status check.
     Q. Quit.
-    
     """)
 
 def main():
+    print("Welcome to Camel!")
+    print("You have stolen a camel to make your way across the great Mobi desert.")
+    print("The natives want their camel back and are chasing you down! Survive your")
+    print("desert trek and out run the natives.")
 
-    drinks_in_canteen = 3
-    natives_distance = -20
-    players_distance = 0
+    miles_traveled = 0
+    thirst = 0
     camel_tiredness = 0
+    natives_distance = -20
+    canteen_drinks = 3
 
-    playing = True
-    while playing:
+    done = False
+    while not done:
         menu()
-        choice = input("You choice? ").lower()
-        if choice == 'q':
-            playing = False
-            continue
-        elif choice == 'a':
-            drinks_in_canteen -= 1
-            natives_distance += 5;
-            pass #drink from canteen
-        elif choice == 'b':
-            pass # ahead moderate speed
-        elif choice == 'c':
-            pass # ahead full speed
-        elif choice == 'd':
-            pass # stop and rest
-        elif choice == 'e':
-            pass # status check
-        else:
-            print("Please choose a valid option!")
+        user_choice = input("What is your choice? ").upper()
+
+        if user_choice == 'Q':
+            done = True
+        elif user_choice == 'A': # A. Drink from your canteen.
+            pass
+        elif user_choice == 'B': # B. Ahead moderate speed.
+            pass
 
 
 main()
