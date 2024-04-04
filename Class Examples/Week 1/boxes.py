@@ -34,8 +34,8 @@ class PhysicsSprite(arcade.Sprite):
 class CircleSprite(PhysicsSprite):
     def __init__(self, pymunk_shape, filename):
         super().__init__(pymunk_shape, filename)
-        self.width = pymunk_shape.radius * 2
-        self.height = pymunk_shape.radius * 2
+        self.width = pymunk_shape.size * 2
+        self.height = pymunk_shape.size * 2
 
 
 class BoxSprite(PhysicsSprite):
