@@ -54,19 +54,69 @@ Lab 10 Starter
 def split_line(line):
     return re.findall('[A-Za-z]+(?:\'[A-Za-z]+)?',line)
 
+some_names = ['Damian Loveless','Rufus Hades','Severin the Unpleasant']
+
 def main():
     """ Read in lines from a file """
 
     # Open the file for reading, and store a pointer to it in the new
     # variable "file"
-    my_file = open("dictionary.txt")
+    names = open("super_villains.txt")
+
+    villians = []
+    for name in names:
+        name = name.strip()
+        villians.append(name)
+
+    names.close()
 
     # Loop through each line in the file like a list
-    for line in my_file:
+    for name in villians:
         # Remove any line feed, carriage returns or spaces at the end of the line
-        line = line.strip()
-        words = split_line(line)
-        for word in words:
-            print(word)
+        name = name.strip()
+        for some_name in some_names:
+            if name == some_name:
+                print('Hey',name,'matches!')
+
+    for some_name in some_names:
+        # Remove any line feed, carriage returns or spaces at the end of the line
+        for name in villians:
+            name = name.strip()
+            if name == some_name:
+                print('Hey',name,'matches!')
+
+    # --- Binary search
+    key = 'Bob the Builder'
+    lower_bound = 0
+    upper_bound = len(villians)-1
+    found = False
+    # for alice ... iterate
+    # split alice line into words
+    # for each word
+
+    # Loop until we find the item, or our upper/lower bounds meet
+    while lower_bound <= upper_bound and not found:
+
+        # Find the middle position
+        middle_pos = (lower_bound + upper_bound) // 2
+
+        # Figure out if we:
+        # move up the lower bound, or
+        # move down the upper bound, or
+        # we found what we are looking for
+
+        print(villians[middle_pos],'=',key)
+
+        if villians[middle_pos] < key:
+            lower_bound = middle_pos + 1
+        elif villians[middle_pos] > key:
+            upper_bound = middle_pos - 1
+        else:
+            found = True
+
+    if found:
+        print( "The name is at position", middle_pos)
+    else:
+        print( "The name was not in the list." )
 
 main()
