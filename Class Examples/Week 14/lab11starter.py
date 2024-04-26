@@ -35,7 +35,7 @@ class MyGame(arcade.Window):
         super().__init__(width, height)
         # Create a 2 dimensional array. A two dimensional
         # array is simply a list of lists.
-        self.grid = []
+        self.grid = [] # create an empty list
         for row in range(ROW_COUNT):
             # Add an empty array that will hold each cell
             # in this row
