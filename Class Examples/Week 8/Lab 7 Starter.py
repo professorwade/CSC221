@@ -33,7 +33,7 @@ class MyGame(arcade.Window):
         self.target_x = 0
         self.target_y = 0
         self.increment = 1
-        self.explosion_sound = arcade.load_sound("explosion.wav")
+        self.explosion_sound = arcade.load_sound("../Week 10/explosion.wav")
         self.explosion_sound_player = None
 
     def on_draw(self):

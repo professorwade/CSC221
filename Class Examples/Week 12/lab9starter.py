@@ -16,7 +16,7 @@ This example is the recommended one. You are welcome to start with the
 third example but it is a bit more complex. The first example is not
 challenging enough and will be graded more stringently if selected.
 """
-SPRITE_SCALING = 0.5
+SPRITE_SCALING = 0.9
 DEFAULT_SCREEN_WIDTH = 800
 DEFAULT_SCREEN_HEIGHT = 600
 SCREEN_TITLE = "Sprite Move with Scrolling Screen Example"
